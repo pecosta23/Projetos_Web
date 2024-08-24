@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <title>Login_index_cadas_1</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <style>
+        body{
+            background-image: url(IMG/torn-pap.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <body background="IMG/torn-pap.jpg">
+        <br>
+        <h1>Crie um acesso</h1>
+        <form action="bd/login_index_cadas_1.php" method="post">
+            <div>
+                <label>Nome de usuário: </label><br>
+                <input type="text" name="nome_index_log" placeholder="Nome"><br>
+                <br>
+                <label>Senha: </label><br>
+                <input type="password" name="senha_index_log" placeholder="Senha"><br>
+            </div>
+            <br>
+            <button type="reset">Limpar</button>
+            <button type="submit">Entrar</button>
+        </form>
+            <br>
+            <a href="login.html">Voltar</a>
+    </body>
+</html>

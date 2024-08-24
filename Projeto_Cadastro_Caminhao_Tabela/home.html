@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gerenciamento de Caminhões</title>
+
+</head>
+<body>
+    <h1>Gerenciamento de Caminhões Agregados</h1>
+    <form action="bd/adicionar.php" method="post">
+        <label for="id">ID: </label>
+        <input type="number" id="id" name="id"><br>
+
+        <label for="placa">Placa: </label>
+        <input type="text" id="placa" name="placa"><br>
+        
+        <label for="modelo">Modelo: </label>
+        <input type="text" id="modelo" name="modelo"><br>
+        
+        <label for="nome_motorista">Nome do Motorista: </label>
+        <input type="text" id="nome_mot" name="nome_mot"><br>
+        
+        <label for="ano_fabricacao">Ano de Fabricação: </label>
+        <input type="number" id="ano_fabri" name="ano_fabri"><br>
+        
+        <label for="valor_diaria">Valor da Diária: </label>
+        <input type="number" id="val_di" name="val_di"><br>
+        
+        <input type="submit" value="Adicionar Caminhão">
+    </form>
+    <h2>Caminhões Agregados</h2>
+    <table border="1">
+        <tr>
+            <th>Placa</th>
+            <th>Modelo</th>
+            <th>Nome do Motorista</th>
+            <th>Ano de Fabricação</th>
+            <th>Valor da Diária</th>
+            <th>Ações</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <title>Pesquisar_1</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="estilo.css">
+</head>
+<style>
+    body{
+        background-image: url(IMG/log.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+    <body>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pesquisar.html">Pesquisar</a>
+            <a href="produtos.html">Produtos</a>
+        </nav><br>
+    <h2>Digite o nome e sobrenome de quem deseja procurar:</h2><br>
+        <form action="bd/pesquisar.php" method="post">
+        <input type="text" name='nome' placeholder="Nome"><br><br>
+        <button type="reset">Limpar</button>
+        <button type="submit">Buscar</button>
+        </form>
+    </body>
+</html>

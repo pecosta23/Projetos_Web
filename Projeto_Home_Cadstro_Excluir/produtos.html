@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Produtos_</title>
+</head>
+
+    <style>
+        body{
+            background-image: url(IMG/torn-pap-cop-b&w.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="pesquisar.html">Pesquisar</a>
+        <a href="produtos.html">Produtos</a>
+    </nav><br>
+    <h2>Selecione o produto que deseja adquirir</h2>
+        <form action="bd/calcular.php" method="post">
+            <input type="number" name="produto" placeholder="Produto"><br>
+            <input type="number" name="quantidade" placeholder="Quantidade"><br><br>
+        <button type="reset">Limpar</button>   
+        <button type="submit">Enviar</button> 
+    </form>
+</body>
+</html>
+
+
+

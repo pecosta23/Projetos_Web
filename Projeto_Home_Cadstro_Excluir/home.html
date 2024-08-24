@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Home_page_1
+    </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <style>
+        body{
+            background-image: url(IMG/log.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <body>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pesquisar.html">Pesquisar</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="excluir.html">Excluir</a>
+        </nav><br>        
+        <p>Cadastrar</p>
+        <form action="bd/cadastro.php" method="post">
+            <div>
+                <input type="int" name="id" placeholder="ID"><br>
+                <input type="text" name="nome" placeholder="Nome"><br>
+                <input type="text" name="sob_nome" placeholder="Sobrenome"><br>
+                <input type="int" name="cep" maxlength="8" placeholder="CEP">
+            </div><br>
+            <button type="reset">Limpar</button>
+            <button type="submit">Cadastrar</button>
+        </form><br>
+        <a href="bd/consultar.php">Consulte os cadastros atuais aqui</a><br><br><br>
+        <a href="como_att.html">Como funciona a atualização de dados?</a>
+        <p>Atualizar</p>
+        <form action="bd/update.php" method="post">
+            <div>
+                <input type="int" name="id" placeholder="Digite o ID atual"><br>
+                <input type="text" name="nome" placeholder="Nome"><br>
+                <input type="text" name="sob_nome" placeholder="Sobrenome"><br>
+                <input type="int" name="cep" maxlength="8" placeholder="CEP">
+            </div>
+            <br>
+                <button type="reset">Limpar</button>
+                <button type="submit">Atualizar</button>
+        </form>
+    </body>
+</html>
